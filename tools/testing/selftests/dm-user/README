@@ -1,0 +1,20 @@
+dm-user Tests
+=============
+Tests for dm-user.
+
+Quick Start
+-----------
+It's probably a bad idea to just run this blindly, but all you need to do is:
+
+# make
+# ./run.sh
+
+Slow Start
+----------
+These tests use `dmsetup` to manage device mapper nodes, which is part of lvm2.
+Some use `fio`, and some use the `fsstress` from xfstests.  Some of the tests
+also expect "/dev/vdb" to exist and to be at least 10G.
+
+I use a simple buildroot-based initramfs to run the tests.  I've added an
+xfstests package to get fsstress, but I haven't sent out the patches yet.  I
+run everything in QEMU.
