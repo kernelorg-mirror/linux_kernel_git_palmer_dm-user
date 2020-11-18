@@ -5198,6 +5198,13 @@ W:	http://sources.redhat.com/cluster/
 T:	git git://git.kernel.org/pub/scm/linux/kernel/git/teigland/linux-dlm.git
 F:	fs/dlm/
 
+DM USER (Block Device in Userspace)
+M:	Palmer Dabbelt <palmerdabbelt@google.com>
+S:	Maintained
+F:	include/linux/dm-user.h
+F:	drivers/md/dm-user.c
+F:	tools/testing/selftests/dm-user/
+
 DMA BUFFER SHARING FRAMEWORK
 M:	Sumit Semwal <sumit.semwal@linaro.org>
 M:	Christian König <christian.koenig@amd.com>
